@@ -47,7 +47,7 @@ for(let line of input) {
 	//fold along x=655
 	let [axis, pos] = line.split(' ').pop().split('=');
 
-	points = fold(points, axis, pos);
+	points = fold(points, axis, +pos);
 
 	break;
 }
